@@ -1,21 +1,20 @@
-This file contains informations about the dataset employee_satisfaction.csv
-
+This file contains information about the dataset employee_satisfaction.csv
 
 +------------------+----------------------------------------------------------------------------------------------------------+
-|   column_name    |                                                description                                               |
+|   column_name    |                                               description                                               |
 +------------------+----------------------------------------------------------------------------------------------------------+
-| emp_id           |  ID, die die Angestellten eindeutig identifiziert                                                        |
-| age              |  Alter der Angestellten                                                                                  |
-| Dept             |  Abteilung der Angestellten                                                                              |
-| education        |  Ausbildungsgrad der Angestellten                                                                        |
-| recruitment_type |  Art der Rekrutierung                                                                                    |
-| job_level        |  1 ist die niedrigste Stufe und 5 die höchste                                                            |
-| rating           |  Bewertung der Angestellten aus dem letzten Jahr, 1 ist die schlechteste und 5 die beste Bewertung       |
-| awards           |  Anzahl der Auszeichnungen                                                                               |
-| certifications   |  Zertifizierungsstatus: 1=zertifiziert, 0=nicht zertifiziert                                             |
-| salary           |  Netto-Gehalt, Angabe in Euro                                                                       |
-| gender           |  Geschlecht                                                                                              |
-| entry_date       |  Datum, zu dem die Angestellten bei der Firma begonnen haben                                             |
-| last_raise       |  Prozentsatz der letzten Gehaltserhöhung                                                                 |
-| satisfied        |  Zufriedenheit: 1=zufrieden, 0=unzufrieden                                                               |
+| emp_id           |  ID that uniquely identifies the employee                                                                
+| age              |  Age of the employee                                                                                     
+| Dept             |  Department of the employee                                                                              
+| education        |  Education level of the employee                                                                         
+| recruitment_type |  Type of recruitment                                                                                     
+| job_level        |  1 is the lowest level and 5 the highest                                                                 
+| rating           |  Employee's rating from the last year, 1 is the worst and 5 the best rating                              
+| awards           |  Number of awards                                                                                        
+| certifications   |  Certification status: 1 = certified, 0 = not certified                                                  
+| salary           |  Net salary, amount in euros                                                                             
+| gender           |  Gender                                                                                                  
+| entry_date       |  Date when the employee started at the company                                                           
+| last_raise       |  Percentage of the last salary increase                                                                  
+| satisfied        |  Satisfaction: 1 = satisfied, 0 = dissatisfied                                                          
 +------------------+----------------------------------------------------------------------------------------------------------+

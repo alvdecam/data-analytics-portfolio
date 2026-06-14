@@ -1,0 +1,23 @@
+Titanic Dataset
+
+This file contains information about the columns in the Titanic dataset.
+
++------------------+----------------------------------------------------------------------------------------------------------+
+|   column_name    |                                               description                                               |
++------------------+----------------------------------------------------------------------------------------------------------+
+| PassengerId      | Unique identifier for each passenger                                                                    |
+| Survived         | Survival status: 0 = Did not survive, 1 = Survived                                                      |
+| Pclass           | Ticket class (proxy for socio-economic status): 1 = 1st class (Upper), 2 = 2nd class (Middle),          |
+|                  | 3 = 3rd class (Lower)                                                                                   |
+| Name             | Passenger's name                                                                                        |
+| Sex              | Passenger's sex: male, female                                                                           |
+| Age              | Age in years. Fractional ages indicate passengers less than 1 year old.                                 |                                                      
+| SibSp            | Number of siblings and spouses aboard the Titanic. Sibling = brother, sister, stepbrother, stepsister;  |
+|                  | Spouse = husband, wife (mistresses and fiancés were not included)                                       |
+| Parch            | Number of parents and children aboard the Titanic. Parent = mother, father; Child = daughter, son,      |
+|                  | stepdaughter, stepson. Some children travelled only with a nanny, so Parch = 0 for them.                |
+| Ticket           | Ticket number                                                                                           |
+| Fare             | Passenger fare paid (in pounds sterling)                                                                |
+| Cabin            | Cabin number                                                                                            |
+| Embarked         | Port of embarkation: C = Cherbourg (France), Q = Queenstown (Ireland), S = Southampton (England)        |
++------------------+----------------------------------------------------------------------------------------------------------+

@@ -1,0 +1,20 @@
+# Dataset: employee_satisfaction.csv
+
+This file contains information about the columns in the employee_satisfaction dataset.
+
+| Column name      | Description                                                                                   |
+|------------------|-----------------------------------------------------------------------------------------------|
+| emp_id           | Unique identifier for each employee.                                                          |
+| age              | Employee's age (in years).                                                                    |
+| Dept             | Department where the employee works.                                                          |
+| education        | Employee's education level.                                                                   |
+| recruitment_type | Method used to recruit the employee.                                                          |
+| job_level        | Job seniority level: 1 = lowest, 5 = highest.                                                 |
+| rating           | Performance rating from the previous year: 1 = worst, 5 = best.                               |
+| awards           | Number of awards received by the employee.                                                    |
+| certifications   | Certification status: 1 = certified, 0 = not certified.                                       |
+| salary           | Net annual salary in USD.                                                                     |
+| gender           | Employee's gender.                                                                            |
+| entry_date       | Date the employee joined the company.                                                         |
+| last_raise       | Percentage increase of the employee's most recent salary raise.                               |
+| satisfied        | Job satisfaction: 1 = satisfied, 0 = dissatisfied.                                            |

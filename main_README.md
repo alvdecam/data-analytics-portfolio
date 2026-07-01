@@ -8,20 +8,7 @@ I'm Álvaro de Diego Camarena, an engineer pivoting into data analysis. I have 4
 
 ## Projects
 
-### 1. Titanic Survival Analysis
-
-**What**: Analysis of the Titanic dataset to explore which passenger characteristics were related to survival, and testing how well those characteristics can predict survival using machine learning.
-
-**Skills**: Data cleaning, handling missing values, exploratory analysis, model comparison (Naive Bayes, Logistic Regression, Random Forest), cross-validation, feature interpretation.
-
-**Key finding**: Gender, ticket class, and age were the strongest predictors of survival (~80% accuracy with Logistic Regression).
-
-**Tools**: pandas, matplotlib, scikit-learn
-
-[View project folder](./titanic-survival-analysis/) | [View notebook](./titanic-survival-analysis/titanic_survivors.ipynb) | [View README](./titanic-survival-analysis/README.md)
----
-
-### 2. Employee Satisfaction Analysis (Fiktiva)
+### 1. Employee Satisfaction Analysis (Fiktiva)
 
 **What**: Analysis of a synthetic HR dataset to understand which employee characteristics are related to job satisfaction, with a focus on data quality checks and honest interpretation of findings.
 
@@ -36,6 +23,33 @@ I'm Álvaro de Diego Camarena, an engineer pivoting into data analysis. I have 4
 [View project folder](./employee-satisfaction-analysis/) | [View notebook](./employee-satisfaction-analysis/fiktiva_employee_satisfaction.ipynb) | [View README](./employee-satisfaction-analysis/README.md)
 ---
 
+### 2. Titanic Survival Analysis
+
+**What**: Analysis of the Titanic dataset to explore which passenger characteristics were related to survival, and testing how well those characteristics can predict survival using machine learning.
+
+**Skills**: Data cleaning, handling missing values, exploratory analysis, model comparison (Naive Bayes, Logistic Regression, Random Forest), cross-validation, feature interpretation.
+
+**Key finding**: Gender, ticket class, and age were the strongest predictors of survival (~80% accuracy with Logistic Regression).
+
+**Tools**: pandas, matplotlib, scikit-learn
+
+[View project folder](./titanic-survival-analysis/) | [View notebook](./titanic-survival-analysis/titanic_survivors.ipynb) | [View README](./titanic-survival-analysis/README.md)
+---
+
+### 3. Olist E-Commerce Analysis
+
+**What**: A larger, end-to-end project using a real Brazilian e-commerce dataset — building a SQL-backed ETL pipeline from raw CSVs, answering 11 exploratory business questions, and training a machine learning model to predict delivery time before an order ships.
+
+**Skills**: SQL (SQLite), ETL pipeline design, outlier investigation and plausibility checks, geospatial analysis (haversine distance, choropleth maps), cross-validated model comparison, feature importance interpretation.
+
+**Key finding**: Olist's own delivery estimates are systematically too conservative, arriving 7 to 20 days early depending on the state. A random forest model predicting delivery time from order, product, and location features reaches an MAE of about 5 days (R² = 0.30), giving customers a meaningfully tighter and more realistic delivery window.
+
+**Tools**: pandas, SQLAlchemy/SQLite, seaborn, plotly, scikit-learn
+
+[View project folder](./Brazilian-E-Commerce-Public-Dataset-by-Olist/) | [View notebooks](./Brazilian-E-Commerce-Public-Dataset-by-Olist/) | [View README](./Brazilian-E-Commerce-Public-Dataset-by-Olist/README.md)
+
+---
+
 ## What You'll Find in Each Project
 
 Every project follows the same structure:
@@ -48,21 +62,21 @@ Every project follows the same structure:
 ## How to Use These Projects
 
 1. **Clone the repository**:
-   ```bash
+```bash
    git clone https://github.com/alvdecam/data-analysis-portfolio.git
    cd data-analysis-portfolio
-   ```
+```
 
 2. **Install dependencies**:
-   ```bash
+```bash
    pip install -r requirements.txt
-   ```
+```
 
 3. **Open a specific project**:
-   ```bash
+```bash
    cd titanic
    jupyter notebook titanic_survivors.ipynb
-   ```
+```
 
 ## Key Skills Demonstrated
 
@@ -84,6 +98,8 @@ All projects use these libraries:
 - matplotlib
 - numpy
 - scikit-learn (used in some projects)
+- SQLAlchemy / SQLite (used in the Olist project)
+- plotly (used in the Olist project)
 
 ## Contact
 

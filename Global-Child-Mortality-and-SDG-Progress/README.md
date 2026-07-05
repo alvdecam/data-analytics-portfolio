@@ -1,4 +1,4 @@
-**[View the full report](https://github.com/alvdecam/data-analytics-portfolio/Global-Child-Mortality-&-SDG-Progress/)**
+**[View the full report](https://github.com/alvdecam/data-analytics-portfolio/Global-Child-Mortality-and-SDG-Progress/)**
 
 # Global Child Mortality & SDG 3 Progress
 

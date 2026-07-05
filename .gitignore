@@ -6,5 +6,5 @@ __pycache__/
 venv/
 .DS_Store
 *:Zone.Identifier
-*.dbdata/
 *.db
+data/

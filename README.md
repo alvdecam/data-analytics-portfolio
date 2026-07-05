@@ -50,31 +50,50 @@ I'm Álvaro de Diego Camarena, an engineer pivoting into data analysis. I have 4
 
 ---
 
+### 4. Global Child Mortality & SDG 3 Progress (R)
+
+**What**: An exploratory analysis of global under-5 mortality trends using data from Our World in Data, examining how the world is progressing toward the SDG 3 target of fewer than 25 deaths per 1,000 live births by 2030.
+
+**Skills**: Data wrangling in R (tidyverse), data visualization (ggplot2), unit conversion, joining datasets, working with country-level panel data, interpreting global development indicators.
+
+**Key finding**: Global child mortality dropped 83% since 1950, but progress is slowing. Only 19% of African countries meet the SDG target, and the 20 countries furthest from it are all African — most facing active conflict. GDP per capita explains 61% of the variation in child mortality, but above ~$10,000, governance and stability matter more than additional wealth.
+
+**Tools**: R, tidyverse (dplyr, ggplot2, readr, tidyr), scales, countrycode, R Markdown
+
+**Note**: This project uses R instead of Python to demonstrate language versatility. Data is from Our World in Data (open access, based on UN IGME and World Bank sources).
+
+[View project folder](./Global-Child-Mortality-and-SDG-Progress/) | [View report](./Global-Child-Mortality-and-SDG-Progress/child_mortality_analysis.md) | [View README](./Global-Child-Mortality-and-SDG-Progress/README.md)
+
+---
+
 ## What You'll Find in Each Project
 
 Every project follows the same structure:
 
 - **README.md**: Overview of the project, data source, how to run the notebook, main findings and caveats
-- **Jupyter notebook (.ipynb)**: Full analysis with code, visualizations, and written explanations
-- **metadata**: Description of all columns and their meaning
-- **Dataset folder**: Raw data file(s)
+- **Jupyter notebook (.ipynb) or R Markdown (.Rmd)**: Full analysis with code, visualizations, and written explanations
+- **Dataset folder**: Raw data file(s) — not included in the repo, with download links in each README
 
 ## How to Use These Projects
 
 1. **Clone the repository**:
 ```bash
-   git clone https://github.com/alvdecam/data-analysis-portfolio.git
-   cd data-analysis-portfolio
+   git clone https://github.com/alvdecam/data-analytics-portfolio.git
+   cd data-analytics-portfolio
 ```
 
 2. **Install dependencies**:
 ```bash
+   # Python projects
    pip install -r requirements.txt
+
+   # R project
+   install.packages(c("tidyverse", "scales", "countrycode"))
 ```
 
 3. **Open a specific project**:
 ```bash
-   cd titanic
+   cd titanic-survival-analysis
    jupyter notebook titanic_survivors.ipynb
 ```
 
@@ -83,23 +102,12 @@ Every project follows the same structure:
 - **Data Quality & Cleaning**: Handling missing values, detecting duplicates, identifying and fixing data entry errors, plausibility checks
 - **Exploratory Data Analysis**: Group comparisons, trend analysis, correlation checks, summarizing findings in charts
 - **Communication**: Clear written explanations of methodology and findings, honest discussion of limitations
-- **Tools & Libraries**: pandas for data manipulation, matplotlib for visualization, scikit-learn for machine learning (where applicable)
+- **Tools & Libraries**: Python (pandas, matplotlib, scikit-learn), R (tidyverse, ggplot2), SQL (SQLAlchemy/SQLite)
 - **Critical Thinking**: Understanding when a finding is real vs. noise, recognizing what the data can and cannot show, flagging assumptions
 
 ## My Approach
 
 I focus on **getting the data quality right first** — understanding the data before drawing conclusions. Each project includes a dedicated data quality section where I check for missing values, inconsistencies, outliers, and other issues. I also believe in **honest interpretation** — if a finding is weak or if there's limited signal, I say so rather than overselling the results.
-
-## Dependencies
-
-All projects use these libraries:
-
-- pandas
-- matplotlib
-- numpy
-- scikit-learn (used in some projects)
-- SQLAlchemy / SQLite (used in the Olist project)
-- plotly (used in the Olist project)
 
 ## Contact
 

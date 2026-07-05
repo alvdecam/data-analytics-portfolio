@@ -8,3 +8,4 @@ venv/
 *:Zone.Identifier
 *.db
 data/
+datasets/

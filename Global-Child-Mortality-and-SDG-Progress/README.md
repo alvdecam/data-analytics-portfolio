@@ -2,14 +2,14 @@
 
 An exploratory analysis in R of global under-5 mortality trends using data from [Our World in Data](https://ourworldindata.org/child-mortality). The project examines how the world is tracking against SDG 3's target of reducing child mortality to below 25 per 1,000 live births by 2030.
 
-## Data
+## Datasets
 
 Two datasets from Our World in Data (free, open-access):
 
 - **Child mortality** — under-5 mortality rate by country and year (1950–2023), from the UN Inter-agency Group for Child Mortality Estimation (UN IGME). [Download](https://ourworldindata.org/child-mortality)
 - **GDP per capita** — PPP-adjusted, constant 2017 international dollars, from the World Bank. [Download](https://ourworldindata.org/grapher/gdp-per-capita-worldbank)
 
-Download both CSVs and place them in a `data/` folder.
+Download both CSVs and place them in a `datasets/` folder.
 
 ## How to run
 
@@ -35,7 +35,7 @@ The R Markdown file covers data preparation (renaming, unit conversion, filterin
 
 ## Main findings
 
-Global under-5 mortality dropped from ~225 to ~37 per 1,000 between 1950 and 2023 — an 83% reduction — but the world is still 12 points above the SDG target and progress is slowing. Africa is the most critical region: only 19% of African countries meet the target, and the 20 countries with the highest mortality are all African. Many of them — Niger, Mali, South Sudan, Somalia — face active armed conflict, making aid delivery extremely difficult. On the positive side, the biggest absolute improvements since 2000 also happened in Africa (Rwanda, Angola, Sierra Leone), driven by international health programs. GDP per capita correlates strongly with child survival, but the effect flattens above ~$10,000 — beyond that, governance and stability matter more than additional wealth.
+Global under-5 mortality dropped from ~225 to ~37 per 1,000 between 1950 and 2023 — an 83% reduction — but the world is still 12 points above the SDG target and progress is slowing. Africa is the most critical region: only 19% of African countries meet the target, and the 20 countries with the highest mortality are all African. Many of them — Niger, Mali, South Sudan, Somalia — face active armed conflict, making aid delivery extremely difficult. On the positive side, the biggest absolute improvements since 2000 also happened in Africa (Rwanda, Angola, Sierra Leone), driven by international health programs. GDP per capita explains 61% of the variation in child mortality (log-linear model), but the effect flattens above ~$10,000 — beyond that, governance and stability matter more than additional wealth.
 
 ## Tools
 

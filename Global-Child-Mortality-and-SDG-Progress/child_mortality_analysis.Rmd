@@ -3,7 +3,7 @@ title: "Global Child Mortality & SDG 3 Progress"
 author: "Alvaro de Diego"
 date: "`r Sys.Date()`"
 output:
-  html_document:
+  github_document:
     toc: true
     toc_float: true
     theme: flatly
@@ -64,7 +64,7 @@ library(countrycode)
 ### Loading and exploring the data
 
 ```{r load-data}
-mortality_raw <- read_csv("data/child-mortality-around-the-world.csv")
+mortality_raw <- read_csv("datasets/child-mortality-around-the-world.csv")
 glimpse(mortality_raw)
 ```
 

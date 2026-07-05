@@ -72,7 +72,7 @@ Every project follows the same structure:
 
 - **README.md**: Overview of the project, data source, how to run the notebook, main findings and caveats
 - **Jupyter notebook (.ipynb) or R Markdown (.Rmd)**: Full analysis with code, visualizations, and written explanations
-- **Dataset folder**: Raw data file(s) — not included in the repo, with download links in each README
+- **Dataset folder**: Raw data file(s) — included in the repo or downloaded separately, depending on the project. Each README explains how to get the data.
 
 ## How to Use These Projects
 

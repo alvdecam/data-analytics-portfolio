@@ -1,5 +1,3 @@
-**[View the full report](https://github.com/alvdecam/data-analytics-portfolio/Global-Child-Mortality-and-SDG-Progress/)**
-
 # Global Child Mortality & SDG 3 Progress
 
 An exploratory analysis in R of global under-5 mortality trends using data from [Our World in Data](https://ourworldindata.org/child-mortality). The project examines how the world is tracking against SDG 3's target of reducing child mortality to below 25 per 1,000 live births by 2030.

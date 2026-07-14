@@ -38,13 +38,13 @@ I'm Álvaro de Diego Camarena, an engineer pivoting into data analysis. I have 4
 
 ### 3. Olist E-Commerce Analysis
 
-**What**: A larger, end-to-end project using a real Brazilian e-commerce dataset — building a SQL-backed ETL pipeline from raw CSVs, answering 11 exploratory business questions, and training a machine learning model to predict delivery time before an order ships.
+**What**: A larger, end-to-end project using a real Brazilian e-commerce dataset — building a SQL-backed ETL pipeline from raw CSVs, answering 11 exploratory business questions, training a machine learning model to predict delivery time before an order ships, and building a three-page Power BI dashboard on the cleaned data for a business stakeholder.
 
-**Skills**: SQL (SQLite), ETL pipeline design, outlier investigation and plausibility checks, geospatial analysis (haversine distance, choropleth maps), cross-validated model comparison, feature importance interpretation.
+**Skills**: SQL (SQLite), ETL pipeline design, outlier investigation and plausibility checks, geospatial analysis (haversine distance, choropleth maps), cross-validated model comparison, feature importance interpretation. Power BI: star-schema data modelling, Power Query (M) transformations, DAX measures, and dashboard design.
 
-**Key finding**: Olist's own delivery estimates are systematically too conservative, arriving 7 to 20 days early depending on the state. A random forest model predicting delivery time from order, product, and location features reaches an MAE of about 5 days (R² = 0.30), giving customers a meaningfully tighter and more realistic delivery window.
+**Key finding**: Olist's own delivery estimates are systematically too conservative, arriving 7 to 20 days early depending on the state. A random forest model predicting delivery time from order, product, and location features reaches an MAE of about 5 days (R² = 0.30), giving customers a meaningfully tighter and more realistic delivery window. Delivery timing is also the clearest driver of customer satisfaction: on-time orders average over 4 stars, while very late orders fall below 2.
 
-**Tools**: pandas, SQLAlchemy/SQLite, seaborn, plotly, scikit-learn
+**Tools**: pandas, SQLAlchemy/SQLite, seaborn, plotly, scikit-learn, Power BI (Power Query, DAX)
 
 [View project folder](./Brazilian-E-Commerce-Public-Dataset-by-Olist/) | [View notebooks](./Brazilian-E-Commerce-Public-Dataset-by-Olist/) | [View README](./Brazilian-E-Commerce-Public-Dataset-by-Olist/README.md)
 
@@ -101,8 +101,9 @@ Every project follows the same structure:
 
 - **Data Quality & Cleaning**: Handling missing values, detecting duplicates, identifying and fixing data entry errors, plausibility checks
 - **Exploratory Data Analysis**: Group comparisons, trend analysis, correlation checks, summarizing findings in charts
+- **BI & Dashboarding**: Star-schema data modelling, Power Query (M), DAX, and stakeholder-facing dashboard design in Power BI
 - **Communication**: Clear written explanations of methodology and findings, honest discussion of limitations
-- **Tools & Libraries**: Python (pandas, matplotlib, scikit-learn), R (tidyverse, ggplot2), SQL (SQLAlchemy/SQLite)
+- **Tools & Libraries**: Python (pandas, matplotlib, scikit-learn), R (tidyverse, ggplot2), SQL (SQLAlchemy/SQLite), Power BI
 - **Critical Thinking**: Understanding when a finding is real vs. noise, recognizing what the data can and cannot show, flagging assumptions
 
 ## My Approach

@@ -1,6 +1,6 @@
 # Data Analysis Portfolio
 
-A collection of data analysis and exploratory data analysis (EDA) projects, showcasing skills in data cleaning, data visualization, statistical analysis, and interpretation. Each project demonstrates a complete workflow from raw data to actionable insights.
+A collection of data analysis projects spanning exploratory analysis (EDA), machine learning, and experiment (A/B test) analysis, showcasing skills in data cleaning, data visualization, statistical analysis, and interpretation. Each project demonstrates a complete workflow from raw data to actionable insights.
 
 ## About Me
 
@@ -50,7 +50,23 @@ I'm Álvaro de Diego Camarena, an engineer pivoting into data analysis. I have 4
 
 ---
 
-### 4. Global Child Mortality & SDG 3 Progress (R)
+### 4. Cookie Cats A/B Test
+
+**What**: Analysis of a real randomized A/B test from the mobile game Cookie Cats, testing whether moving a progression gate from level 30 to level 40 changed player retention.
+
+**Skills**: Experiment analysis, randomization balance checks, retention/conversion lift, hypothesis testing (two-proportion z-test with a chi-square cross-check), bootstrap confidence intervals, statistical power reasoning, distinguishing statistical from practical significance.
+
+**Key finding**: Moving the gate to level 40 did not improve retention. Day-7 retention was slightly higher for gate_30 (19.0% vs 18.2%, a 0.82 pp difference), statistically significant (p = 0.0016) with a 95% CI of [0.33, 1.35] pp that stays above zero. The effect is real but small, so the recommendation is to keep the gate at level 30.
+
+**Tools**: pandas, numpy, statsmodels, scipy
+
+**Note**: Data is downloaded at runtime via `kagglehub`.
+
+[View project folder](./Cookie-Cats-A-B-Test-Analysis/) | [View notebook](./Cookie-Cats-A-B-Test-Analysis/ab-test-cookie-cats.ipynb) | [View README](./Cookie-Cats-A-B-Test-Analysis/README.md)
+
+---
+
+### 5. Global Child Mortality & SDG 3 Progress (R)
 
 **What**: An exploratory analysis of global under-5 mortality trends using data from Our World in Data, examining how the world is progressing toward the SDG 3 target of fewer than 25 deaths per 1,000 live births by 2030.
 
@@ -72,7 +88,7 @@ Every project follows the same structure:
 
 - **README.md**: Overview of the project, data source, how to run the notebook, main findings and caveats
 - **Jupyter notebook (.ipynb) or R Markdown (.Rmd)**: Full analysis with code, visualizations, and written explanations
-- **Dataset folder**: Raw data file(s) — included in the repo or downloaded separately, depending on the project. Each README explains how to get the data.
+- **Dataset folder**: Raw data file(s) — included in the repo, downloaded separately, or fetched at runtime via `kagglehub`, depending on the project. Each README explains how to get the data.
 
 ## How to Use These Projects
 
@@ -101,9 +117,10 @@ Every project follows the same structure:
 
 - **Data Quality & Cleaning**: Handling missing values, detecting duplicates, identifying and fixing data entry errors, plausibility checks
 - **Exploratory Data Analysis**: Group comparisons, trend analysis, correlation checks, summarizing findings in charts
+- **Experiment Analysis (A/B Testing)**: Randomization checks, hypothesis testing (z-test, chi-square), bootstrap confidence intervals, power and effect-size reasoning
 - **BI & Dashboarding**: Star-schema data modelling, Power Query (M), DAX, and stakeholder-facing dashboard design in Power BI
 - **Communication**: Clear written explanations of methodology and findings, honest discussion of limitations
-- **Tools & Libraries**: Python (pandas, matplotlib, scikit-learn), R (tidyverse, ggplot2), SQL (SQLAlchemy/SQLite), Power BI
+- **Tools & Libraries**: Python (pandas, matplotlib, scikit-learn, statsmodels, scipy), R (tidyverse, ggplot2), SQL (SQLAlchemy/SQLite), Power BI
 - **Critical Thinking**: Understanding when a finding is real vs. noise, recognizing what the data can and cannot show, flagging assumptions
 
 ## My Approach

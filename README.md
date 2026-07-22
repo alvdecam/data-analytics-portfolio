@@ -94,7 +94,7 @@ I'm Álvaro de Diego Camarena, an engineer pivoting into data analysis. I have 4
 
 **Note**: Data is downloaded at runtime via `kagglehub`.
 
-[View project folder](./rossmann-store-sales-forecasting/) | [View notebooks](./rossmann-store-sales-forecasting/) | [View README](./rossmann-store-sales-forecasting/README.md)
+[View project folder](./time-series-forecast-rossman/) | [View notebooks](./time-series-forecast-rossman/) | [View README](./time-series-forecast-rossman/README.md)
 
 ---
 

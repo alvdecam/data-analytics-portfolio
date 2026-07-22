@@ -1,6 +1,6 @@
 # Data Analysis Portfolio
 
-A collection of data analysis projects spanning exploratory analysis (EDA), machine learning, and experiment (A/B test) analysis, showcasing skills in data cleaning, data visualization, statistical analysis, and interpretation. Each project demonstrates a complete workflow from raw data to actionable insights.
+A collection of data analysis projects spanning exploratory analysis (EDA), machine learning, time-series forecasting, and experiment (A/B test) analysis, showcasing skills in data cleaning, data visualization, statistical analysis, and interpretation. Each project demonstrates a complete workflow from raw data to actionable insights.
 
 ## About Me
 
@@ -82,6 +82,22 @@ I'm Álvaro de Diego Camarena, an engineer pivoting into data analysis. I have 4
 
 ---
 
+### 6. Rossmann Store Sales — Demand Forecasting
+
+**What**: Time-series forecasting of daily sales across 1,115 Rossmann drugstores in Germany (2013–2015), predicting the company-wide total six weeks ahead. The forecast is built twice — once "from scratch" with engineered lag and calendar features feeding standard regressors, and once with Prophet — to compare a fully interpretable approach against a purpose-built forecasting library.
+
+**Skills**: Time-series feature engineering (lag features, calendar encoding), leak-free chronological train/test splitting, baseline-first evaluation, metric selection for series with near-zero days (WAPE over MAPE), model comparison (Linear Regression, Random Forest, Prophet), coefficient-level diagnosis, and honest reporting of negative results.
+
+**Key finding**: Random Forest cuts the seasonal-naive baseline's error to under a third (WAPE 30.2% → 8.9%), and Prophet reaches a similar level (8.4%) with almost no feature engineering. Linear Regression trails because it cannot represent the promo × weekday interaction the EDA uncovered. A deliberate test of one-hot encoding the weekday returned an honest negative result: because `lag_7` already carries the weekly shape, the one-hot flags added only noise.
+
+**Tools**: pandas, scikit-learn, Prophet, matplotlib, pyarrow
+
+**Note**: Data is downloaded at runtime via `kagglehub`.
+
+[View project folder](./rossmann-store-sales-forecasting/) | [View notebooks](./rossmann-store-sales-forecasting/) | [View README](./rossmann-store-sales-forecasting/README.md)
+
+---
+
 ## What You'll Find in Each Project
 
 Every project follows the same structure:
@@ -117,6 +133,7 @@ Every project follows the same structure:
 
 - **Data Quality & Cleaning**: Handling missing values, detecting duplicates, identifying and fixing data entry errors, plausibility checks
 - **Exploratory Data Analysis**: Group comparisons, trend analysis, correlation checks, summarizing findings in charts
+- **Time-Series Forecasting**: Lag/calendar feature engineering, chronological (leak-free) splits, baseline-first evaluation, and model comparison including Prophet
 - **Experiment Analysis (A/B Testing)**: Randomization checks, hypothesis testing (z-test, chi-square), bootstrap confidence intervals, power and effect-size reasoning
 - **BI & Dashboarding**: Star-schema data modelling, Power Query (M), DAX, and stakeholder-facing dashboard design in Power BI
 - **Communication**: Clear written explanations of methodology and findings, honest discussion of limitations
